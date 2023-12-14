@@ -49,9 +49,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneId: 0
+  _assetId: 2587914510
   serverOnly: 0
   visible: 0
-  m_AssetId: 9c1fcf0bb8d52b64e8942be4389210c9
   hasSpawned: 0
 --- !u!65 &1149199007548456290
 BoxCollider:
@@ -75,7 +75,8 @@ AudioSource:
   m_GameObject: {fileID: 1149199007548456289}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 8b35de0d4f3929146a63c1355673d08b, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8b35de0d4f3929146a63c1355673d08b,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -174,12 +175,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f7e8fc34f98344d8c6f0a527a929bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
   syncMode: 0
   syncInterval: 0.1
   TimeToReplenish: 10
   _pickupMesh: {fileID: 1149199007664325776}
   _pickupClip: {fileID: 8300000, guid: 1eda48781b97f2b4fb985c0aa0f82f17, type: 3}
-  _itemPrefab: {fileID: 2628629563475623980, guid: 2b7891a0e9a9af64f9a24d632c25eabe, type: 3}
+  _itemPrefab: {fileID: 2628629563475623980, guid: 2b7891a0e9a9af64f9a24d632c25eabe,
+    type: 3}
   _amount: 60
 --- !u!1 &1149199007664325774
 GameObject:

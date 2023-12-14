@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: CharacterSkin_SOLDIER
   m_EditorClassIdentifier: 
   SkinName: SOLDIER
-  Mesh: {fileID: -4214021686595859913, guid: 257d2e8ae375d9249a93f8856c423e68, type: 3}
-  Material: {fileID: 2100000, guid: f3499babb71b7714e9686c8abefbffe1, type: 2}
-  FPP_Mesh: {fileID: 5879972497300055999, guid: 07504123bc274f34b9338e37e238f6db, type: 3}
-  FPP_Material: {fileID: 2100000, guid: 2a552c8ca347d974c96a75e71cf21947, type: 2}
+  Mesh: {fileID: -4301585035851711073, guid: 37ada819eeafd3f41852216f8dad67f6, type: 3}
+  Material: {fileID: 2100000, guid: 3d83a2a13ed1d5148924e4c275e8c7ac, type: 2}
+  FPP_Mesh: {fileID: -4301585035851711073, guid: 37ada819eeafd3f41852216f8dad67f6,
+    type: 3}
+  FPP_Material: {fileID: 2100000, guid: 3d83a2a13ed1d5148924e4c275e8c7ac, type: 2}

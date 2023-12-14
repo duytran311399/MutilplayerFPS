@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: CharacterSkin_Automata
   m_EditorClassIdentifier: 
   SkinName: Automata
-  Mesh: {fileID: 5193968450157878889, guid: 05fd5e4d4586b3345ad4ba1801271342, type: 3}
-  Material: {fileID: 2100000, guid: 963f8a867afbf4d4cbe4ea1f1a0b1a4e, type: 2}
-  FPP_Mesh: {fileID: 7548130295208195059, guid: 39d461cddd7206d4e8eebdbf238b1101, type: 3}
-  FPP_Material: {fileID: 2100000, guid: 3c19d0c8362b7f7468e2f9381a6739ce, type: 2}
+  Mesh: {fileID: -4301585035851711073, guid: 37ada819eeafd3f41852216f8dad67f6, type: 3}
+  Material: {fileID: 2100000, guid: 3d83a2a13ed1d5148924e4c275e8c7ac, type: 2}
+  FPP_Mesh: {fileID: -4301585035851711073, guid: 37ada819eeafd3f41852216f8dad67f6,
+    type: 3}
+  FPP_Material: {fileID: 2100000, guid: 3d83a2a13ed1d5148924e4c275e8c7ac, type: 2}

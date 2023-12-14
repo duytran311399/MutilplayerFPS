@@ -61,12 +61,15 @@ MonoBehaviour:
   transport: {fileID: 1755931330}
   networkAddress: localhost
   maxConnections: 100
+  disconnectInactiveConnections: 0
+  disconnectInactiveTimeout: 60
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 4898308515290633002, guid: d7e32e1b2ac2bd34eb18659b8c097057, type: 3}
+  playerPrefab: {fileID: 4898308515290633002, guid: d7e32e1b2ac2bd34eb18659b8c097057,
+    type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs:
-  - {fileID: 2382563002283882899, guid: 8827429e4975d0148862b44a8124a64c, type: 3}
+  - {fileID: 2382563002283882899, guid: 93a6961dd9c87f645a0c6b12e40c61e5, type: 3}
   - {fileID: 2628629563475623980, guid: 2b7891a0e9a9af64f9a24d632c25eabe, type: 3}
   - {fileID: 2628629563475623980, guid: 28a917ed6e215e14196169001d9ecc0b, type: 3}
   - {fileID: 2628629563475623980, guid: 90a4c86834aa0da4cb4b1b9699eab1cb, type: 3}
@@ -75,6 +78,18 @@ MonoBehaviour:
   - {fileID: 6691523866337650896, guid: 157326965a889fa4d93a3917f590190c, type: 3}
   - {fileID: 2553433583228043648, guid: 7b1534f84e1e6a34db524fdb5716ec7d, type: 3}
   - {fileID: 7330187862537376364, guid: 32bed1fa990ea974fbe8ddf437afa5b8, type: 3}
+  snapshotSettings:
+    bufferTimeMultiplier: 2
+    bufferLimit: 32
+    catchupNegativeThreshold: -1
+    catchupPositiveThreshold: 1
+    catchupSpeed: 0.019999999552965164
+    slowdownSpeed: 0.03999999910593033
+    driftEmaDuration: 1
+    dynamicAdjustment: 1
+    dynamicAdjustmentTolerance: 1
+    deliveryTimeEmaDuration: 2
+  connectionQualityInterval: 3
   timeInterpolationGui: 0
 --- !u!114 &6290211825898679258
 MonoBehaviour:
@@ -175,20 +190,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0fecffa3f624585964b0d0eb21b18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Port: 7777
+  port: 7777
   DualMode: 1
   NoDelay: 1
   Interval: 10
   Timeout: 10000
+  RecvBufferSize: 7361536
+  SendBufferSize: 7361536
   FastResend: 2
-  CongestionWindow: 0
-  SendWindowSize: 4096
   ReceiveWindowSize: 4096
+  SendWindowSize: 4096
   MaxRetransmit: 40
-  NonAlloc: 1
-  MaximizeSendReceiveBuffersToOSLimit: 1
-  ReliableMaxMessageSize: 298449
-  UnreliableMaxMessageSize: 1199
+  MaximizeSocketBuffers: 1
+  ReliableMaxMessageSize: 297433
+  UnreliableMaxMessageSize: 1195
   debugLog: 0
   statisticsGUI: 0
   statisticsLog: 0
@@ -205,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   port: 7778
+  ClientUseDefaultPort: 0
   maxMessageSize: 16384
   handshakeMaxSize: 3000
   noDelay: 1
